@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 150px;
+}
+
+/* Sections */
+
+.hero {
+  background-color: #FFCECE;
+  padding: 70px 150px;
+}
+
+header {
+  margin: 0px;
+}
+
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.myWork {
+  background-color: #F7F8FA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cloutStorage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #513D5B;
+  background-image: url("/images/cloutstoragelogo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125px;
+  border-radius: 10px;
+}
+
+.cloutStorageHover {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(247, 248, 250, 0.9);
+  opacity: 0;
+  transition: 0.1s opacity ease-in-out;
+}
+
+.cloutStorageHover:hover {
+  opacity: 1;
+}
+
+.busyBus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #C8E2FF;
+  background-image: url("/images/busybuslogo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.busyBusHover {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(247, 248, 250, 0.9);
+  opacity: 0;
+  transition: 0.1s opacity ease-in-out;
+}
+
+.busyBusHover:hover {
+  opacity: 1;
+}
+
+.aboutMe {
+  margin: 50px 0;
+}
+
+/** Typography  **/
+p, h3, h4, h5, h6, a {
+  color: #2E4B5B;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.titleCat {
+  color: #2E4B5B;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 36px;
+  text-decoration: underline #C7D6DB;
+}
+
+.logoCat {
+  color: #2E4B5B;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  color: #2E4B5B;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+b {
+  font-weight: 700;
+}
+
+a {
+  background-color: #C7D6DB;
+  text-decoration: underline #9CCDB6;
+}
+
+.navMenu a {
+  background-color: transparent;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline #FFCECE;
+}
+
+.description {
+  width: 300px;
+}
+
+/** Buttons **/
+.contactBtn {
+  background-color: #FFCECE;
+  border: none;
+  border-radius: 15px;
+  box-shadow: .5px .5px rgba(46, 75, 91, 0.25);
+  color: #2E4B5B;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 14px;
+  padding: 9px 13px 7px;
+}
+
+.titleLogo {
+  padding-right: 25px;
+  vertical-align: middle;
+}
+
+.smallLogo {
+  padding-right: 11px;
+  vertical-align: middle;
+}
+
+/* Pictures */
+.profilePic {
+  background-image: url("/images/profilePic.jpg");
+  background-size: contain;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+}
