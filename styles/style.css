@@ -1,3 +1,7 @@
+body {
+  background-color: #FFFFFF;
+}
+
 .container {
   display: flex;
   flex-flow: column wrap;
@@ -6,9 +10,11 @@
 
 /* Sections */
 
-.hero {
+.hero, footer {
+  display: flex;
   background-color: #FFCECE;
-  padding: 70px 150px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 header {
@@ -20,9 +26,9 @@ header {
   padding-bottom: 10px;
 }
 
-.myWork {
+.myWork, .testimonials {
   background-color: #F7F8FA;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
@@ -40,22 +46,6 @@ header {
   border-radius: 10px;
 }
 
-.cloutStorageHover {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(247, 248, 250, 0.9);
-  opacity: 0;
-  transition: 0.1s opacity ease-in-out;
-}
-
-.cloutStorageHover:hover {
-  opacity: 1;
-}
-
 .busyBus {
   display: flex;
   flex-direction: column;
@@ -71,7 +61,7 @@ header {
   height: 150px;
 }
 
-.busyBusHover {
+.cloutStorageHover, .busyBusHover {
   display: flex;
   height: 100%;
   width: 100%;
@@ -83,12 +73,20 @@ header {
   transition: 0.1s opacity ease-in-out;
 }
 
-.busyBusHover:hover {
+.cloutStorageHover:hover, .busyBusHover:hover {
   opacity: 1;
 }
 
 .aboutMe {
   margin: 50px 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 /** Typography  **/
@@ -118,7 +116,23 @@ h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin: 25px auto;
+}
+
+.aboutMe h3 {
+  color: #2E4B5B;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 25px auto;
+}
+
+.skills h3 {
+  margin: 0;
+}
+
+.cloutStorageHover h2, .busyBusHover h2 {
+  margin: 0px;
 }
 
 b {
@@ -130,7 +144,7 @@ a {
   text-decoration: underline #9CCDB6;
 }
 
-.navMenu a {
+.navMenu a, footer a {
   background-color: transparent;
   font-size: 14px;
   text-decoration: none;
@@ -166,6 +180,21 @@ a {
   vertical-align: middle;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin: 0 15px;
+}
+
+li a {
+  font-size: 16px;
+}
+
 /* Pictures */
 .profilePic {
   background-image: url("/images/profilePic.jpg");
@@ -173,4 +202,12 @@ a {
   border-radius: 5px;
   height: 150px;
   width: 150px;
+}
+
+.kelvin {
+  background-image: url("/images/kelvin.jpg");
+  background-size: contain;
+  border-radius: 75px;
+  height: 75px;
+  width: 75px;
 }
