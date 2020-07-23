@@ -1,11 +1,15 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #FFFFFF;
 }
 
 .container {
   display: flex;
   flex-flow: column wrap;
-  margin: 0 150px;
+  padding: 0 150px;
 }
 
 /* Sections */
@@ -15,6 +19,7 @@ body {
   background-color: #FFCECE;
   padding-left: 150px;
   padding-right: 150px;
+  width: 100%;
 }
 
 header {
@@ -30,6 +35,7 @@ header {
   background-color: #F7F8FA;
   padding-top: 10px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .cloutStorage {
@@ -63,9 +69,9 @@ header {
 
 .cloutStorageHover, .busyBusHover {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(247, 248, 250, 0.9);
@@ -79,14 +85,24 @@ header {
 
 .aboutMe {
   margin: 50px 0;
+  text-align: center;
+}
+
+.blurb {
+  text-align: left;
+}
+
+.skills {
+  text-align: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-top: 100px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 /** Typography  **/
@@ -95,6 +111,7 @@ p, h3, h4, h5, h6, a {
   font-family: 'Pontano Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  /* margin-block-end: 0; */
 }
 
 .titleCat {
@@ -141,6 +158,11 @@ b {
 
 a {
   background-color: #C7D6DB;
+}
+
+a:hover {
+  color: #2E4B5B;
+  background: none;
   text-decoration: underline #9CCDB6;
 }
 
@@ -150,12 +172,18 @@ a {
   text-decoration: none;
 }
 
+.navMenu a:hover {
+  color: #2E4B5B;
+  text-decoration: underline #C7D6DB;
+}
+
 .underline {
   text-decoration: underline #FFCECE;
 }
 
 .description {
-  width: 300px;
+  width: 100%;
+  margin-block-end: 0;
 }
 
 /** Buttons **/
