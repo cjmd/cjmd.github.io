@@ -22,10 +22,6 @@ body {
   width: 100%;
 }
 
-header {
-  margin: 0px;
-}
-
 .nav {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -33,6 +29,7 @@ header {
 
 .myWork, .testimonials {
   background-color: #F7F8FA;
+  margin-top: 0;
   padding-top: 10px;
   padding-bottom: 50px;
   text-align: center;
@@ -105,6 +102,12 @@ footer {
   justify-content: flex-end;
 }
 
+.bio {
+  border: 1px solid #9CCDB6;
+  box-shadow: 5px 5px 0px #9CCDB6;
+  padding: 50px;
+}
+
 /** Typography  **/
 p, h3, h4, h5, h6, a {
   color: #2E4B5B;
@@ -166,7 +169,7 @@ a:hover {
   text-decoration: underline #9CCDB6;
 }
 
-.navMenu a, footer a {
+.titleAndLogo a, .navMenu a, footer a {
   background-color: transparent;
   font-size: 14px;
   text-decoration: none;
@@ -184,6 +187,30 @@ a:hover {
 .description {
   width: 100%;
   margin-block-end: 0;
+}
+
+.bio h4 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 24px;
+}
+
+.innerDialog {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  border-left: 8px solid #C7D6DB;
+  padding: 10px;
+  margin-left: 25px;
+}
+
+.asterisk {
+  font-size: 100px;
+}
+
+.personal {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  text-align: left;
 }
 
 /** Buttons **/
