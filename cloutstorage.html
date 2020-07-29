@@ -1,92 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <title>Portfolio | Cat de Leon</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:ital,wght@0,700;1,300;1,400&family=Sacramento&family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   </head>
-  <body>
+  <body style="background-color:#F7F8FA">
 
-    <header>
-      <nav>
-        <a href="index.html"><img src="logo.png" alt="Cat de Leon logo">cat de leon</a>
-        <div class="navMenu">
-          <a href="#">Work</a>
-          <a href="bio.html">About me</a>
-          <a href="#">Resume</a>
-          <button type="button" name="contact" onclick="location.href='contact.html'">Contact</button>
+    <section class="container">
+
+      <div class="nav">
+        <div class="logoAndName">
+          <span class="titleAndLogo"><a href="index.html"><img src="images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
         </div>
-      </nav>
-    </header>
+        <div class="navMenu">
+          <a href="bio.html">About me</a>
+          <button class="buttons" onclick="location.href='mailto:catherinejade.deleon@gmail.com'">Contact</button>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="cloutSectioned">
+      <h2>Clout Storage</h2>
+      <img src="images/cloutStorageLogo.svg" height=120 alt="Clout Storage logo">
+      <p>A cloud storage service that organizes your photos using machine learning and AI.</p>
+      <button class="buttons" name="button">View Clout Storage Prototype</button>
+    </section>
 
     <main>
-      <section class="cloutHeader">
-        <h2>Clout Storage</h2>
-        <img src="cloutLogo">
-        <p>A cloud storage service that organizes your photos using machine learning and AI.</p>
-        <button type="button" name="button">View Clout Storage Prototype</button>
-      </section>
+      <div class="container cloutStoragePage">
+        <div class="col-xs-offset-3 col-xs-6">
+          <h3>Overview</h3><p>Without a clear vision, a client requested a product that was similar to existing cloud storage services. Clout Storage, a cloud storage photo app, implements features that use the same features but is geared toward photo and social media use.</p></div>
+        <div class="col-xs-offset-3 col-xs-6">
+        <h4>Project roles</h4>
+        <p class="centerText">User research, User Experience, and Visual Design</p></div>
 
-      <h3>Overview</h3>
-      <p>Without a clear vision, a client requested a product that was similar to existing cloud storage services. Clout Storage, a cloud storage photo app, implements features that use the same features but is geared toward photo and social media use.</p>
-      <h4>Project roles</h4>
-      <p>User research, User Experience, and Visual Design</p>
+        <hr>
 
-      <hr>
+        <h3>Problem</h3>
+        <div class="row middle-xs">
+          <div class="col-xs-offset-1 col-xs-4"><img src="images/competitors.svg" alt="Icons of cloud storage competitors" width=100%></div>
+          <div class="col-xs-6"><p>The client requested for a service to tap into the cloud storage market, citing services such as Google Drive, Dropbox, Box, Evernote, and Pinterest as potential competitors. However, the client had no clear vision for the product, with no name, branding, and even a target audience in mind. The client only had a list of requested features: saving content, organizing content, creating content, uploading content, and sharing content to encourage the growth of users.</p></div>
+        </div>
 
-      <h3>Problem</h3>
-      <p>The client requested for a service to tap into the cloud storage market, citing services such as Google Drive, Dropbox, Box, Evernote, and Pinterest as potential competitors. However, the client had no clear vision for the product, with no name, branding, and even a target audience in mind. The client only had a list of requested features: saving content, organizing content, creating content, uploading content, and sharing content to encourage the growth of users.</p>
+        <h3>Solution</h3>
+        <div class="row middle-xs">
+          <div class="col-xs-offset-1 col-xs-6"><p>With the research and process outlined below, the product developed is called Clout Storage, a cloud storage photo app geared toward phooto and social media use.</p></div>
+          <div class="col-xs-4"><img src="images/cloutstoragelogo-title.svg" alt="Clout Storage logo with title" width=100%></div>
+        </div>
 
-      <h3>Solution</h3>
-      <p>With the research and process outlined below, the product developed is called Clout Storage, a cloud storage photo app geared toward phooto and social media use.</p>
+        <hr>
 
-      <hr>
-
-      <h3>Research</h3>
-      <p>The client requested for a service to tap into the cloud storage market, citing services such as Google Drive, Dropbox, Box, Evernote, and Pinterest as potential competitors. However, the client had no clear vision for the product and without a name, branding, and even a target audience, the first step was to do research.</p>
-
-      <h4>User research</h4>
-      <p>A survey was conducted to gather information on how users use existing cloud storage services. While only 35 users took the survey, their responses were informative of current products and how they're used.</p>
-
-      <div class="cloutSectioned">
-        A few examples of the questions asked are:
-        <ul>
-          <li>What does "cloud storage" mean to you?</li>
-          <li>Do you use cloud storage?</li>
-          <li>Which cloud storage service do you use?</li>
-          <li>What do you use our cloud storage service(s) for?</li>
-          <li>What are your favorite features of cloud storage?</li>
-          <li>What do you dislike about cloud storage?</li>
-        </ul>
-        <button type="button" name="cloutSurvey">Complete cloud storage survey</button>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
+            <h3>Research</h3>
+            <p>The client requested for a service to tap into the cloud storage market, citing services such as Google Drive, Dropbox, Box, Evernote, and Pinterest as potential competitors. However, the client had no clear vision for the product and without a name, branding, and even a target audience, the first step was to do research.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
+            <h4>User research</h4><p>A survey was conducted to gather information on how users use existing cloud storage services. While only 35 users took the survey, their responses were informative of current products and how they're used.</p>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <p>When asked what cloud storage is, all participants understand that it's a drive used to store and access content remotely and online.  When asked to provide examples, the participants listed the biggest names in the market: Google Drive, iCloud, Dropbox, OneDrive, and Box.  Other examples provided were enterprise services like Microsoft Azure, Google Cloud Platform, and Amazon Web Services.  These particular examples gave me insight on the different uses of cloud services.</p>
+    <div class="cloutSectioned">
+      <p>A few examples of the questions asked are:</p>
+      <ul>
+        <li>What does "cloud storage" mean to you?</li>
+        <li>Do you use cloud storage?</li>
+        <li>Which cloud storage service do you use?</li>
+        <li>What do you use our cloud storage service(s) for?</li>
+        <li>What are your favorite features of cloud storage?</li>
+        <li>What do you dislike about cloud storage?</li>
+      </ul>
+      <button class="buttons" name="cloutSurvey">Complete cloud storage survey</button>
+    </div>
 
-      <img src="cloudStoragePie" alt="Pie chart that show 33 out of 35 survey participants use cloud storage services">
+    <main>
+      <div class="container cloutStoragePage">
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6"><p>When asked what cloud storage is, all participants understand that it's a drive used to store and access content remotely and online.  When asked to provide examples, the participants listed the biggest names in the market: Google Drive, iCloud, Dropbox, OneDrive, and Box.  Other examples provided were enterprise services like Microsoft Azure, Google Cloud Platform, and Amazon Web Services.  These particular examples gave me insight on the different uses of cloud services.</p></div>
+        </div>
 
-      <p>Out of the 35 participants, only two (2) don’t use cloud storage.</p>
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-5">
+            <img src="images/cloudstoragepiechart.svg" alt="Pie chart that show 33 out of 35 survey participants use cloud storage services" width=100%>
+          </div>
+          <div class="col-xs-5">
+            <img src="images/cloudstorageservices.png" alt="Bar graph of top used cloud storage services" width=100%>
+          </div>
+        </div>
 
-      <img src="cloudStorageServices" alt="Bar graph of top used cloud storage services">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-5">
+            <p>Out of the 35 participants, only two (2) don’t use cloud storage.</p>
+          </div>
+          <div class="col-xs-5">
+            <p>Out of all of the participants who do use cloud storage, all but one (1) use Google Drive.  Majority use iCloud and Dropbox as well.</p>
+          </div>
+        </div>
 
-      <p>Out of all of the participants who do use cloud storage, all but one (1) use Google Drive.  Majority use iCloud and Dropbox as well.</p>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
+            <img src="images/cloudstorageuse.png" width=100% alt="Bar graph of reasons survey participants use cloud storage">
 
-      <img src="cloudStorageUse" alt="Bar graph of reasons survey participants use cloud storage">
+            <p>The participants who do use cloud storage use them for a variety of reasons as expected.  Of all the auxiliary reasons to use cloud storage, photos had the biggest use, which makes sense in this day and age when taking photos is easily done so we’re taking a LOT of them and need somewhere to store them.</p>
 
-      <p>The participants who do use cloud storage use them for a variety of reasons as expected.  Of all the auxiliary reasons to use cloud storage, photos had the biggest use, which makes sense in this day and age when taking photos is easily done so we’re taking a LOT of them and need somewhere to store them.</p>
+            <p>Seeing the variety of use cases for cloud storage introduces many directions that this app could take.  Instead of serving multiple purposes and competing with the big names, this app could be geared towards a certain niche.</p>
 
-      <p>Seeing the variety of use cases for cloud storage introduces many directions that this app could take.  Instead of serving multiple purposes and competing with the big names, this app could be geared towards a certain niche.</p>
+            <p>After collecting data on which services were used most, competitive analyses were made between them.</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-      <p>After collecting data on which services were used most, competitive analyses were made between them.</p>
-
-      <div class="cloutSectioned">
-        <h4>Competitive Analysis</h4>
-        <div class="competitor">
-          <img src="googledrive.png" alt="Google Drive logo">
-          <h5>Google Drive</h5>
-
+    <div class="cloutSectioned">
+      <h4>Competitive Analysis</h4>
+      <img src="images/googledrivelogo.svg" alt="Google Drive logo">
+      <h5>Google Drive</h5>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-2">
           <h6>Strengths</h6>
           <ul>
             <li>First 15 GB of storage are free</li>
@@ -94,275 +131,395 @@
             <li>Offers up to 30 TB of storage</li>
             <li>Easy to upload and organize</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Weaknesses</h6>
           <ul>
             <li>Doesn't offer unlimited storage</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Opportunities</h6>
           <ul>
             <li>Offers unlimited storage</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Threats</h6>
           <ul>
             <li>Business users might opt for unlimited storage</li>
           </ul>
         </div>
+      </div>
 
-        <div class="competitor">
-          <img src="iclouddrive.png" alt="iCloud Drive logo">
-          <h5>iCloud Drive</h5>
-
+      <img src="images/icloudlogo.svg" alt="iCloud Drive logo">
+      <h5>iCloud Drive</h5>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-2">
           <h6>Strengths</h6>
           <ul>
             <li>5 GB of free storage to start</li>
             <li>Automatic upload for those with more than one Apple device</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Weaknesses</h6>
           <ul>
             <li>Not much use outside of Apple devices</li>
             <li>Organization isn't as straightforward and intuitive</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Opportunities</h6>
           <ul>
             <li>Available automation for other devices/platforms</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Threats</h6>
           <ul>
             <li>Users might opt for services that live outside the Apple ecosystem</li>
           </ul>
         </div>
+      </div>
 
-        <div class="competitor">
-          <img src="dropbox.png" alt="Dropbox logo">
-          <h5>Dropbox</h5>
-
+      <img src="images/dropboxlogo.svg" alt="Dropbox logo">
+      <h5>Dropbox</h5>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-2">
           <h6>Strengths</h6>
           <ul>
             <li>Get 2 GB of space for free</li>
             <li>Unlimited storage for enterprise use</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Weaknesses</h6>
           <ul>
             <li>Free storage is smaller than other services</li>
             <li>No smart organization</li>
             <li>Forces download of desktop app upon onboarding</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Opportunities</h6>
           <ul>
             <li>Higher free storage</li>
           </ul>
-
+        </div>
+        <div class="col-xs-2">
           <h6>Threats</h6>
           <ul>
             <li>Users might opt for services that sync across other products</li>
           </ul>
-
         </div>
       </div>
+    </div>
 
-      <p>After seeing that all services do well in their own right, their processes were studied to gather the general flow and patterns of how onboarding, saving content, and organizing work.</p>
+    <main>
+      <div class="container cloutStoragePage">
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6" align="center">
+            <p align="left">After seeing that all services do well in their own right, their processes were studied to gather the general flow and patterns of how onboarding, saving content, and organizing work.</p>
+            <button class="buttons" name="userFlows">Complete user flows</button>
+          </div>
+        </div>
 
-      <button type="button" name="userFlows">Complete user flows</button>
+        <h4>User personas</h4>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
+            <p>Once the main processes were more grounded, I returned to the survey to find the personas that would be using (or not using) this service: the nonuser, the regular user, and the power user.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="userPersona">
+              <h5>The nonuser</h5>
+              <div class="row middle-xs">
+                <div class="joanwilson"></div>
+                <div class="col-xs blurb"><p>Joan Wilson<br>
+                62, Middle school teacher</p></div>
+              </div>
 
-      <h4>User personas</h4>
-      <p>Once the main processes were more grounded, I returned to the survey to find the personas that would be using (or not using) this service: the nonuser, the regular user, and the power user.</p>
+              <h6>Motivations</h6>
+              <ul>
+                <li>Misplaces physical hard drives</li>
+              </ul>
 
-      <div class="userPersona">
-        <h5>The nonuser</h5>
-        <img src="nonuser.png" alt="Picture of woman">
-        <p>Joan Wilson<br>
-        62, Middle school teacher</p>
+              <h6>Goals</h6>
+              <ul>
+                <li>Have it be as simple and unintrusive as using a flash drive</li>
+              </ul>
 
-        <h6>Motivations</h6>
-        <ul>
-          <li>Misplaces physical hard drives</li>
-        </ul>
+              <h6>Frustrations</h6>
+              <ul>
+                <li>Tries to upload all documents automatically</li>
+                <li>Too many steps to work as desired</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="userPersona">
+              <h5>The Regular User</h5>
+              <div class="row middle-xs">
+                <div class="jordantran"></div>
+                <div class="col-xs blurb"><p>Jordan Tran<br>
+                27, Social media influencer</p></div>
+              </div>
 
-        <h6>Goals</h6>
-        <ul>
-          <li>Have it be as simple and unintrusive as using a flash drive</li>
-        </ul>
+              <h6>Motivations</h6>
+              <ul>
+                <li>Wants to make sure she'll never lose her pictures</li>
+              </ul>
 
-        <h6>Frustrations</h6>
-        <ul>
-          <li>Tries to upload all documents automatically</li>
-          <li>Too many steps to work as desired</li>
-        </ul>
+              <h6>Goals</h6>
+              <ul>
+                <li>Will always have room for all of her pictures</li>
+              </ul>
+
+              <h6>Frustrations</h6>
+              <ul>
+                <li>Pictures aren't at their highest quality</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="userPersona">
+              <h5>The Power User</h5>
+              <div class="row middle-xs">
+                <div class="kevinscout"></div>
+                <div class="col-xs blurb"><p>Kevin Scout<br>
+                31, Software engineer</p></div>
+              </div>
+
+              <h6>Motivations</h6>
+              <ul>
+                <li>Wants to use all the services available</li>
+              </ul>
+
+              <h6>Goals</h6>
+              <ul>
+                <li>Do it quickly and seamlessly without issue</li>
+              </ul>
+
+              <h6>Frustrations</h6>
+              <ul>
+                <li>Offline syncing doesn't work as well or as quickly as desired</li>
+                <li>Limited access from data/cap bandwidth availability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-3 col-xs-6">
+            <p>These users, as well as administrators, would require the following functions in order for the app to be successful:</p>
+          </div>
+        </div>
       </div>
-
-      <div class="userPersona">
-        <h5>The Regular User</h5>
-        <img src="regularuser.png" alt="Picture of woman">
-        <p>Jordan Tran<br>
-        27, Social media influencer</p>
-
-        <h6>Motivations</h6>
-        <ul>
-          <li>Wants to make sure she'll never lose her pictures</li>
-        </ul>
-
-        <h6>Goals</h6>
-        <ul>
-          <li>Will always have room for all of her pictures</li>
-        </ul>
-
-        <h6>Frustrations</h6>
-        <ul>
-          <li>Pictures aren't at their highest quality</li>
-        </ul>
-      </div>
-
-      <div class="userPersona">
-        <h5>The Power User</h5>
-        <img src="poweruser.png" alt="Picture of man">
-        <p>Kevin Scout<br>
-        31, Software engineer</p>
-
-        <h6>Motivations</h6>
-        <ul>
-          <li>Wants to use all the services available</li>
-        </ul>
-
-        <h6>Goals</h6>
-        <ul>
-          <li>Do it quickly and seamlessly without issue</li>
-        </ul>
-
-        <h6>Frustrations</h6>
-        <ul>
-          <li>Offline syncing doesn't work as well or as quickly as desired</li>
-          <li>Limited access from data/cap bandwidth availability</li>
-        </ul>
-      </div>
-
-      <p>These users, as well as administrators, would require the following functions in order for the app to be successful:</p>
-
-      <div class="cloutSectioned">
-        <h5>User stories</h5>
-        <ul>
-          <li>As a new user I want to sign up for an account with my email</li>
-          <li>As a new user I want a tutorial on how to use the service</li>
-          <li>As a returning user I want to paste to save content from my computer</li>
-          <li>As a returning user I want to upload content from my computer</li>
-          <li>As a returning user I want to create folders</li>
-          <li>As a returning user I want to tag content</li>
-          <li>As a returning user I want to organize by tags</li>
-          <li>As a returning user I want to move content</li>
-          <li>As a returning user I want to delete content</li>
-          <li>As a returning user I want to search content by name</li>
-          <li>As a returning user I want to search content by tags</li>
-          <li>As a returning user I want to search content by context</li>
-          <li>As a returning user I want to re-download content to my computer</li>
-        </ul>
-        <button type="button" name="userStoriesButton">Complete list of user stories</button>
-      </div>
-
-      <p>After solidifying the user stories I now had a clearer picture of what the user flows would look like for the product. <button type="button" name="userFlowsButton">Complete user flows</button></p>
-
-      <hr>
-
-      <h3>Content Strategy</h3>
-
-      <img src="sitemap.png" alt="Image of site map">
-      <p>At this point, the basis of the product is forming and needs a foundation. To the left is the sitemap and initial content strategy for the product.</p>
-      <p>With this content strategy, wireframes were now able to bbe formed and made into a clickabble prototype.</p>
-      <button type="button" name="wireframePrototypeButton">Wireframe clickable prototype</button>
-      <p>The wireframe and prototype were modeled after existing services so that users would have no problem identifying what to do. This is reflective in the user tests that were conducted.</p>
-      <p>These tests provided a lot of feedback for me, like one user's list view suggestion. There were a lot of screens that the "regular users" weren't able to use; that was my lack of direction for them. I should have been more specific with what "organizing content" meant.</p>
-      <p>With that feedback, the user flows and processes were satisfactory and the next step was branding in order to create higher quality mockups.</p>
-
-      <hr>
-
-      <h3>Branding</h3>
-
-      <p>If this cloud storage service remained a generic service that's supposed to compete with Google Drive, Dropbox, and iCloud, it would get lost in such a saturated market. I revisited the survey results and the user personas to see if there was a product that could go to a less saturated market. After realizing that majority of users use cloud storage for photos, I thought of different ways that a cloud storage service could be used for photos other than just storage.</p>
-      <img src="cloudStoragePhotoUse" alt="Bar graph of reasons survey participants use cloud storage, emphasis on photos">
-      <img src="cloutStorageSketches" alt="Sketches of the Clout Storage logo">
-      <p>Because of the surgence of photos and social media in the past decade, it made sense to come up with a service for this purpose. Eventually I landed on an idea of a cloud storage service that was geared towards social media users, bloggers, and influencers to use for their photos.</p>
-      <img src="colors.png" alt="Color palette: peacy pink, cardboard tan, dusty blue, black, funk purple, and white">
-      <p>Because this is now geared toward the "influencer," I think the color palette should be a little more feminie, light, and airy but still approachable for everyone.</p>
-
-      <hr>
-
-      <h3>Logo, Typography, Moodboard</h3>
-
-      <div class="logoSection">
-        <img src="cloutSketch" alt="Sketch of final logo">
-        <img src="cloutFinal" alt="Final color logo">
-        <img src="cloutBW" alt="Final black and white logo">
-      </div>
-
-      <p>Because of the nature of the service, I want the brand typeface to be a script because scripts tend to be more feminine. Using <a href="https://fontpair.co/">Fontpair.co</a>, I tried to see what sans-serif would go best with a script. I want to use a sans-serif font because we're in the digital age and this is a social media app, so I thought sans-serif would be more appropriate. See the font choices below.</p>
-      <p>Logo: Scramento, 75px</p>
-      <p>Body: Lato, 16px</p>
-
-      <p>Lastly, below is the moodboard to match the fun, exciting, and simple mood of the app.</p>
-
-      <img src="moodboard.png" alt="Collage of social pictures with similar colors to the color palette">
-
-      <hr>
-
-      <h3>Initial mockups</h3>
-
-      <img src="initalDashboard.png" alt="Screenshot of the initial version of the app dashboard">
-
-      <p>The first versions of my mockups had fwe screen and, as seen in the dashboard above, had inconsistencies with sizing, spacing, and overall looks to them, as well as UI issues, like back buttons and navigation issues. After that feedback, I was able to create more screens for more processes and implement the recommended feedback. See the improved dashboard below.</p>
-
-      <img src="dashboardIteration.png" alt="Screenshot of the second version of the app dashboard">
-
-      <p>The improved desktop mockups were made into a clickable prototype which was tested using Invision. All three users who tested the prorotype said the app was clear and clean. There was some confusion with the "new," "add," and "upload" buttons as a new user so improvements were needed there. The bulk actions or "Select" tool should be usable and the "sort" button should be usable to see how the pictures can be sorted. Lastly, the dashboard or home should have more context rather than just a "junk drawer" of pictures; albums, memories, or tags at a glance as well as recently uploaded pictures.</p>
-
-      <p>After the feedback from the user tests, I was able to implement the changes which brought me to the final prototype, which can be seen below.</p>
-
-      <button type="button" name="button">View Clout Storage Prototype</button>
-
-      <div class="cloutSectioned">
-
-        <h3>Final mockups</h3>
-
-        <img src="finalDashboard.png" alt="Screenshot of the final version of the app dashboard">
-
-        <img src="finalSearch.png" alt="Screenshot of the final version of the app search function">
-
-        <img src="tag.png" alt="Tag icon">
-        <b>AUTOMATIC TAGS</b>
-        <p>Using machine learning and AI, your photos are automatically tagged for easy search and organization.</p>
-
-        <img src="search.png" alt="Search icon">
-        <b>SEARCH FOR ANYTHING</b>
-        <p>Find pictures by date, place, content, and context. Use the built in tags or create your own for truly personal search.</p>
-
-        <img src="devices.png" alt="Devices icon">
-        <b>SYNC ACROSS ALL DEVICES</b>
-        <p>Upload, download, and search your pictures from every device instantly.</p>
-
-        <button type="button" name="finalMockups">View final mockups</button>
-      </div>
-
-      <h3>Conclusion</h3>
-
-      <p>This project was a little daunting to start not only because of the lack of vision and direction given by the client but also because of how saturated the market is that the client was trying to enter. Competing with Dropbox and Google Drive is difficult as is, let alone as a product with no target audience.</p>
-
-      <p>The research conducted definitely helped, especially when figuring out the direction of the product. However, after the pivot from a generic cloud storage service to a photo storage service, the additional research wasn't conducted for a photo storage service, including competitive analysis for existing products in the same space. If that research were completed, I would have better insight as to which features were necessary and which were extraneous for this product.</p>
-
-      <p>The feedback I received from external sources has also been really helpful because I tended to get stuck staring at the project without much evolution. Without the right feedback, I would still be trying to create a competitor to big name cloud storage services.</p>
-
-      <p>If given more time, I would have conducted the extra research on the niche market. I would also have touched more upon the creaiton of documents, for blog posts or post captions, and what collaboration would look like.</p>
-
-      <p>While I feel like I've improved so much doing this project alone, the biggest takeaway is how much feedback matters. Constantly getting comments from graders, my mentor, and my peers really helped put this project together. Moving forward, I will be sure to gather as much external feedback as I possibly can.</p>
-
     </main>
-    <hr>
+
+    <div class="cloutSectioned">
+      <h5>User stories</h5>
+      <ul>
+        <li>As a new user I want to sign up for an account with my email</li>
+        <li>As a new user I want a tutorial on how to use the service</li>
+        <li>As a returning user I want to paste to save content from my computer</li>
+        <li>As a returning user I want to upload content from my computer</li>
+        <li>As a returning user I want to create folders</li>
+        <li>As a returning user I want to tag content</li>
+        <li>As a returning user I want to organize by tags</li>
+        <li>As a returning user I want to move content</li>
+        <li>As a returning user I want to delete content</li>
+        <li>As a returning user I want to search content by name</li>
+        <li>As a returning user I want to search content by tags</li>
+        <li>As a returning user I want to search content by context</li>
+        <li>As a returning user I want to re-download content to my computer</li>
+      </ul>
+      <button class="buttons" name="userStoriesButton">Complete list of user stories</button>
+    </div>
+
+    <main>
+      <div class="container cloutStoragePage">
+        <div class="row middle-xs">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-5"><p>After solidifying the user stories I now had a clearer picture of what the user flows would look like for the product.</p></div>
+          <div class="col-xs-3"><button class="buttons" name="userFlowsButton">Complete user flows</button></div>
+          <div class="col-xs-2"></div>
+        </div>
+
+        <hr>
+
+        <h3>Content Strategy</h3>
+
+        <div class="row center-xs middle-xs">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-3"><img src="images/sitemap.png" width=100% alt="Image of site map"></div>
+          <div class="col-xs-5">
+            <p align=left>At this point, the basis of the product is forming and needs a foundation. To the left is the sitemap and initial content strategy for the product.</p>
+            <p align=left>With this content strategy, wireframes were now able to bbe formed and made into a clickabble prototype.</p>
+            <button class="buttons" name="wireframePrototypeButton" style="margin-bottom:0px;">Wireframe clickable prototype</button>
+            <p align=left>The wireframe and prototype were modeled after existing services so that users would have no problem identifying what to do. This is reflective in the user tests that were conducted.</p>
+            <p align=left>These tests provided a lot of feedback for me, like one user's list view suggestion. There were a lot of screens that the "regular users" weren't able to use; that was my lack of direction for them. I should have been more specific with what "organizing content" meant.</p>
+            <p align=left>With that feedback, the user flows and processes were satisfactory and the next step was branding in order to create higher quality mockups.</p>
+          </div>
+          <div class="col-xs-2"></div>
+        </div>
+
+        <hr>
+
+        <h3>Branding</h3>
+
+        <div class="row middle-xs">
+          <div class="col-xs-offset-1 col-xs-5">
+            <p>If this cloud storage service remained a generic service that's supposed to compete with Google Drive, Dropbox, and iCloud, it would get lost in such a saturated market. I revisited the survey results and the user personas to see if there was a product that could go to a less saturated market. After realizing that majority of users use cloud storage for photos, I thought of different ways that a cloud storage service could be used for photos other than just storage.</p>
+          </div>
+          <div class="col-xs-5"><img src="images/cloudstoragephotouse.png" width=100% alt="Bar graph of reasons survey participants use cloud storage, emphasis on photos"></div>
+        </div>
+
+        <div class="row middle-xs center-xs">
+          <div class="col-xs-offset-1 col-xs-4"><img src="images/cloutstoragesketches.png" width=100% alt="Sketches of the Clout Storage logo"></div>
+          <div class="col-xs-6">
+            <p align=left>Because of the surgence of photos and social media in the past decade, it made sense to come up with a service for this purpose. Eventually I landed on an idea of a cloud storage service that was geared towards social media users, bloggers, and influencers to use for their photos.</p>
+            <img src="images/cloutstoragecolors.svg" alt="Color palette: peacy pink, cardboard tan, dusty blue, black, funk purple, and white">
+            <p align=left>Because this is now geared toward the "influencer," I think the color palette should be a little more feminie, light, and airy but still approachable for everyone.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3>Logo, Typography, Moodboard</h3>
+      </div>
+    </main>
+
+    <div class="cloutLogoSection">
+      <div class="row middle-xs">
+        <div class="col-xs-offset-2 col-xs-2">
+          <img src="images/cloutlogosketch.png" width=100% alt="Clout Storage logo sketch">
+        </div>
+        <div class="col-xs-4"><img src="images/cloutStorageLogo.svg" width=100% alt="Final color logo"></div>
+        <div class="col-xs-2">
+          <img src="images/cloutstoragelogobw.svg" width=100% alt="Final black and white logo">
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container cloutStoragePage">
+        <div class="col-xs-offset-3 col-xs-6">
+          <p>Because of the nature of the service, I want the brand typeface to be a script because scripts tend to be more feminine. Using <a href="https://fontpair.co/">Fontpair.co</a>, I tried to see what sans-serif would go best with a script. I want to use a sans-serif font because we're in the digital age and this is a social media app, so I thought sans-serif would be more appropriate. See the font choices below.</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-4"></div>
+          <div class="col-xs-2">
+            <p>Logo: Sacramento, 75px</p>
+            <p style="font-family:'Sacramento';font-size:75px;margin-top:50px;margin-bottom:0px;padding-bottom:0px" align="center">logo</p>
+          </div>
+          <div class="col-xs-2">
+            <p>Body: Lato, 16px</p>
+            <p style="font-family:'Lato'">This is the font for the cloud storage service!</p>
+          </div>
+          <div class="col-xs-4"></div>
+        </div>
+        <div class="col-xs-offset-3 col-xs-6">
+          <p>Lastly, below is the moodboard to match the fun, exciting, and simple mood of the app.</p>
+          <img src="images/cloutstoragemoodboard.svg" width=100% alt="Collage of social pictures with similar colors to the color palette">
+        </div>
+
+        <hr>
+
+        <h3>Initial mockups</h3>
+
+        <div class="col-xs-offset-1 col-xs-10"><img src="images/initialDesktop.png" width=100% alt="Screenshot of the initial version of the app dashboard"></div>
+
+        <div class="col-xs-offset-3 col-xs-6">
+          <p>The first versions of my mockups had fwe screen and, as seen in the dashboard above, had inconsistencies with sizing, spacing, and overall looks to them, as well as UI issues, like back buttons and navigation issues. After that feedback, I was able to create more screens for more processes and implement the recommended feedback. See the improved dashboard below.</p>
+        </div>
+
+        <div class="col-xs-offset-1 col-xs-10"><img src="images/desktopIteration.png" width=100% alt="Screenshot of the second version of the app dashboard"></div>
+
+        <div class="col-xs-offset-3 col-xs-6">
+          <p align=left>The improved desktop mockups were made into a clickable prototype which was tested using Invision. All three users who tested the prorotype said the app was clear and clean. There was some confusion with the "new," "add," and "upload" buttons as a new user so improvements were needed there. The bulk actions or "Select" tool should be usable and the "sort" button should be usable to see how the pictures can be sorted. Lastly, the dashboard or home should have more context rather than just a "junk drawer" of pictures; albums, memories, or tags at a glance as well as recently uploaded pictures.</p>
+
+          <p align=left>After the feedback from the user tests, I was able to implement the changes which brought me to the final prototype, which can be seen below.</p>
+        </div>
+
+        <div class="row center-xs"><button class="buttons" name="button">View Clout Storage Prototype</button></div>
+
+      </div>
+    </main>
+
+    <div class="cloutSectioned">
+      <h3>Final mockups</h3>
+      <div class="row">
+        <div class="col-xs-offset-3 col-xs-6"><img src="images/finalDashboard.png" width=100% alt="Screenshot of the final version of the app dashboard"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-offset-3 col-xs-6"><img src="images/finalSearch.png" width=100% alt="Screenshot of the final version of the app search function"></div>
+      </div>
+      <br>
+      <div class="row middle-xs center-xs">
+        <div class="col-xs-3">
+          <p style="font-family:'Lato'"><img src="images/tag.svg" alt="Tag icon"><br>
+          <b>AUTOMATIC TAGS</b><br>
+          <br>
+          Using machine learning and AI, your photos are automatically tagged for easy search and organization.</p>
+        </div>
+        <div class="col-xs-3">
+          <p style="font-family:'Lato'"><img src="images/search.svg" alt="Search icon"><br>
+          <b>SEARCH FOR ANYTHING</b><br>
+          <br>
+          Find pictures by date, place, content, and context. Use the built in tags or create your own for truly personal search.</p>
+        </div>
+        <div class="col-xs-3">
+          <p style="font-family:'Lato'"><img src="images/devices.svg" alt="Devices icon"><br>
+          <b>SYNC ACROSS ALL DEVICES</b><br>
+          <br>
+          Upload, download, and search your pictures from every device instantly.</p>
+        </div>
+
+
+
+      </div>
+      <button class="buttons" name="finalMockups">View final mockups</button>
+    </div>
+
+    <main>
+      <div class="container cloutStoragePage">
+        <h3>Conclusion</h3>
+        <div class="col-xs-offset-3 col-xs-6">
+          <p>This project was a little daunting to start not only because of the lack of vision and direction given by the client but also because of how saturated the market is that the client was trying to enter. Competing with Dropbox and Google Drive is difficult as is, let alone as a product with no target audience.</p>
+
+          <p>The research conducted definitely helped, especially when figuring out the direction of the product. However, after the pivot from a generic cloud storage service to a photo storage service, the additional research wasn't conducted for a photo storage service, including competitive analysis for existing products in the same space. If that research were completed, I would have better insight as to which features were necessary and which were extraneous for this product.</p>
+
+          <p>The feedback I received from external sources has also been really helpful because I tended to get stuck staring at the project without much evolution. Without the right feedback, I would still be trying to create a competitor to big name cloud storage services.</p>
+
+          <p>If given more time, I would have conducted the extra research on the niche market. I would also have touched more upon the creaiton of documents, for blog posts or post captions, and what collaboration would look like.</p>
+
+          <p>While I feel like I've improved so much doing this project alone, the biggest takeaway is how much feedback matters. Constantly getting comments from graders, my mentor, and my peers really helped put this project together. Moving forward, I will be sure to gather as much external feedback as I possibly can.</p>
+        </div>
+      </div>
+    </main>
+
     <footer>
       <p>If you have any questions, please don't hesitate to contact me!</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/catdeleon/">
+            <img src="images/linkedin.svg" height="20" alt="LinkedIn icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/cjmd">
+            <img src="images/github.svg" height="20" alt="GitHub icon">
+          </a>
+        </li>
+        <li>
+          <a href="mailto:catherinejade.deleon@gmail.com">
+            <img src="images/mail.svg" height="20" alt="Envelope/mail icon">
+          </a>
+        </li>
+      </ul>
     </footer>
 
   </body>
