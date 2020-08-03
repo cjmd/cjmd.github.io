@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Cat de Leon</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body>
-
-    <div class="container">
-
-      <div class="row middle-xs nav">
-        <div class="col-xs-1"></div>
-        <div class="col-xs-2">
-          <span class="titleAndLogo"><a href="index.html"><img src="images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4">
-          <div class="row end-xs around-xs middle-xs navMenu">
-            <a href="#">Work</a>
-            <a href="bio.html">About me</a>
-            <a href="#">Resume</a>
-            <button class="contactBtn" onclick="location.href='contact.html'">Contact</button>
-          </div>
-        </div>
-        <div class="col-xs-1"></div>
+  <body class="aboutMePage">
+    <section class="nav">
+      <div class="logoAndName">
+        <span class="titleAndLogo"><a href="index.html"><img src="images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
       </div>
-
+      <div class="navMenu">
+        <a href="bio.html">About me</a>
+        <button class="buttons" onclick="location.href='mailto:catherinejade.deleon@gmail.com'">Contact</button>
+      </div>
+    </section>
+    <section class="container">
       <main>
-        <div class="row bottom-xs">
-          <div class="col-xs">
-            <section class="bio">
+        <div class="wholeAbout">
+          <article class="bio">
             <p>I love food, going to concerts, and playing Tetris.<br>
               My name is Catherine Jade de Leon, but please...</p>
+            <br>
             <h4>Call me Cat.</h4>
-            <p>I think I've always been a designer without ever having said it aloud. I was "building" websites in elementary school on Neopets PetPages and it continued on the middle school and high school when I was restyling my Xanga blog and my MySpace page.</p>
-            <p><div class="innerDialog">I've aged myself pretty extensively here, haven't I?</div></p>
-            <p>Don't get me wrong, "building websites" is in quotes for a reason. The earlier stages were just pasting in GIFs, links, and maybe text marquees if I really wanted to be fancy. Later, it was copying, pasting, and tweaking style sheets to my liking.</p>
-            <p>It might have been this familiarity with web language that helped me in college with my introductory computer science courses. While I enjoyed these frustrating courses, I pursued math instead, because at the time, I thought math was the only thing I was equally good at and interested in. By the end of my five years at SJSU, I learned I was very wrong but I was already a year overdue and just wanted to get out of school.</p>
-            <p>After graduating, I was sitting on my expensive diploma and a lack of passion. It would be that way for an additional five years, while working jobs that let me do the only thing I liked about math - solving problems - and doing it the only way I know how; by trying to make people's lives easier.</p>
-            <p>I wish there was a poetic moment to how I got here, to how I realized everything I've done in the past has culminated to my decision of wanting to pursue design, but the reality is this: my brother, a UX designer, showed me what he does.</p>
+            <br>
+            <p>I think I've always been a designer without ever having said it aloud. I was "building" websites in elementary school on Neopets PetPages and it continued on the middle school and high school when I was restyling my Xanga blog and my MySpace page.
+            <br>
+            <div class="innerDialog">I've aged myself pretty extensively here, haven't I?</div>
+            <p>Don't get me wrong, "building websites" is in quotes for a reason. The earlier stages were just pasting in GIFs, links, and maybe text marquees if I really wanted to be fancy. Later, it was copying, pasting, and tweaking style sheets to my liking.
+            <br><br>
+            It might have been this familiarity with web language that helped me in college with my introductory computer science courses. While I enjoyed these frustrating courses, I pursued math instead, because at the time, I thought math was the only thing I was equally good at and interested in. By the end of my five years at SJSU, I learned I was very wrong but I was already a year overdue and just wanted to get out of school.
+            <br><br>
+            After graduating, I was sitting on my expensive diploma and a lack of passion. It would be that way for an additional five years, while working jobs that let me do the only thing I liked about math - solving problems - and doing it the only way I know how; by trying to make people's lives easier.
+            <br><br>
+            I wish there was a poetic moment to how I got here, to how I realized everything I've done in the past has culminated to my decision of wanting to pursue design, but the reality is this: my brother, a UX designer, showed me what he does.</p>
             <p><div class="innerDialog">Why aren't I already doing this?</div></p>
             <p>So here I am.</p>
-          </section>
-          </div>
-          <div class="col-xs">
-            <div class="row top-xs end-xs">
-              <div class="col-xs-1 asterisk">*</div>
-              <div class="col-xs">
-                <section class="personal">
-                    <div>If you happen to catch me off my laptop, I might be playing tennis, watching a basketball game, singing karaoke, taking pictures with my phone, or befriending your pet. :)</div>
-                </section>
-              </div>
+          </article>
+          <article class="shortBio">
+            <div class="asterisk">*</div>
+            <div class="personal">
+              <hr>If you happen to catch me off my laptop, I might be playing tennis, watching a basketball game, singing karaoke, taking pictures with my phone, or befriending your pet. :)
             </div>
-          </div>
+          </article>
         </div>
       </main>
-    </div>
+    </section>
 
     <footer>
       <p>Wanna play a game of Tetris?</p>
@@ -72,7 +63,7 @@
           </a>
         </li>
         <li>
-          <a href="/contact.html">
+          <a href="mailto:catherinejade.deleon@gmail.com">
             <img src="images/mail.svg" height="20" alt="Envelope/mail icon">
           </a>
         </li>

@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Cat de Leon</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
     <body>
 
+      <section class="landingPageNav">
+        <div class="logoAndName">
+          <span class="titleAndLogo"><a href="index.html"><img src="images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
+        </div>
+        <div class="navMenu">
+          <a href="bio.html">About me</a>
+          <button class="buttons" onclick="location.href='mailto:catherinejade.deleon@gmail.com'">Contact</button>
+        </div>
+      </section>
+
           <section class="hero">
-            <div class="row">
-              <div class="col-xs-offset-1 col-xs-6">
-                <img src="images/cd-logo-shadow.svg" height="100" class="titleLogo" alt="Cat de Leon logo"><span class="titleCat">cat de leon</span>
-                <h2>My name is long so just call me <b>Cat</b>. I'm a <b>UI/UX Designer</b> from the <b>SF Bay Area</b> and more than things that <b>look good to users</b>, I like things that <b>work well for users</b>.</h2>
-                <p>Oh, you too? <a href="contact.html">Let's talk.</a></p>
-              </div>
+            <div class="heroTitle">
+              <img src="images/cd-logo-shadow.svg" height="100" class="titleLogo" alt="Cat de Leon logo"><span class="titleCat">cat de leon</span>
+              <h2>My name is long so just call me <b>Cat</b>. I'm a <b>UI/UX Designer</b> from the <b>SF Bay Area</b> and more than things that <b>look good to users</b>, I like things that <b>work well for users</b>.</h2>
+              <p>Oh, you too? <a href="mailto:catherinejade.deleon@gmail.com">Let's talk.</a></p>
             </div>
           </section>
 
-        <div class="container">
-
-            <div class="row middle-xs nav">
-              <div class="col-xs-1"></div>
-              <div class="col-xs-2">
-                <span class="titleAndLogo"><a href="index.html"><img src="images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
-              </div>
-              <div class="col-xs-4"></div>
-              <div class="col-xs-4">
-                <div class="row end-xs around-xs middle-xs navMenu">
-                  <a href="#">Work</a>
-                  <a href="bio.html">About me</a>
-                  <a href="#">Resume</a>
-                  <button class="contactBtn" onclick="location.href='contact.html'">Contact</button>
-                </div>
-              </div>
-              <div class="col-xs-1"></div>
+        <section class="container">
+          <div class="nav">
+            <div class="landingNavMenu">
+              <a href="bio.html">About me</a>
+              <button class="buttons" onclick="location.href='mailto:catherinejade.deleon@gmail.com'">Contact</button>
             </div>
+          </div>
 
+          <main>
 
-      <main>
-
-        <section class="myWork">
-          <h2><span class="underline">My work</span></h2>
-          <div class="row">
-            <div class="col-xs-2"></div>
-            <div class="col-xs-4">
+          <section class="myWork">
+            <h2><span class="underline">My work</span></h2>
+            <div class="projects">
               <div class="cloutStorage">
                 <div class="cloutStorageHover">
                   <h2>Clout Storage</h2>
@@ -52,93 +47,78 @@
                   <br><a href="cloutstorage.html">View case study</a></p>
                 </div>
               </div>
-            </div>
-            <div class="col-xs-4">
               <div class="busyBus">
                 <div class="busyBusHover">
                   <h2>BusyBus</h2>
-                  <p class="description">Track your bus routes and never miss the bus again.
-                  <br><a href="#">View case study</a></p>
+                  <p class="description">Track your bus routes and never miss the bus again.<br>
+                  <a href="#">Clickable prototype</a></p>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2"></div>
-          </div>
-        </section>
+          </section>
 
-        <section class="aboutMe">
-          <h2><span class="underline">About Me</span></h2>
-          <div class="row middle-xs">
-            <div class="col-xs-4"></div>
-            <div class="col-xs-2">
-              <div class="profilePic"></div>
-            </div>
-            <div class="col-xs-4">
+          <section class="aboutMe">
+            <h2><span class="underline">About Me</span></h2>
+            <div class="profile">
+              <div class="profilePic"><img src="/images/profilePic.jpg" height="150" width="150" style="border-radius:5px"></div>
               <div class="blurb">
                 <p>I love helping people solve their problems.<br>
                 And Figma.<br>
                 And the color pink.<br>
                 ...And chocolate.<br>
-                <p><a href="#">Learn more</a></p>
+                <p><a href="bio.html">Learn more</a></p>
               </div>
             </div>
-          </div>
-          <h3><span class="underline">Skills</span></h3>
-          <div class="row">
-            <!-- <div class="col-xs-1"></div> -->
-            <div class="col-xs skills">
-              <h3>Research & Discovery</h3>
-                <p>Identifying problems<br>
-                User research<br>
-              Competitive analysis<br>
-            User personas<br>
+            <h3><span class="underline">Skills</span></h3>
+            <div class="skills">
+              <div class="skill">
+                <h3>Research & Discovery</h3>
+                  <p>Identifying problems<br>
+                  User research<br>
+                Competitive analysis<br>
+              User personas<br>
+            User testing</p>
+              </div>
+              <div class="skill">
+                <h3>Information Architecture</h3>
+                  <p>Card sorting<br>
+                  User stories<br>
+                Site maps<br>
+              Content strategy<br>
+            User testing</p>
+              </div>
+              <div class="skill">
+                <h3>Visual Design</h3>
+                  <p>Stretching<br>
+                  Wireframing<br>
+                Hi-fi prototyping<br>
+              Moodboards<br>
+            Branding<br>
           User testing</p>
+              </div>
+              <div class="skill">
+                <h3>Tools & More</h3>
+                  <p>HTML/CSS/JS<br>
+                  Photoshop<br>
+                Figma/Sketch<br>
+              Project management<br>
+            Team collaboration</p>
+              </div>
             </div>
-            <div class="col-xs skills">
-              <h3>Information Architecture</h3>
-                <p>Card sorting<br>
-                User stories<br>
-              Site maps<br>
-            Content strategy<br>
-          User testing</p>
-            </div>
-            <div class="col-xs skills">
-              <h3>Visual Design</h3>
-                <p>Stretching<br>
-                Wireframing<br>
-              Hi-fi prototyping<br>
-            Moodboards<br>
-          Branding<br>
-        User testing</p>
-            </div>
-            <div class="col-xs skills">
-              <h3>Tools & More</h3>
-                <p>HTML/CSS/JS<br>
-                Photoshop<br>
-              Figma/Sketch<br>
-            Project management<br>
-          Team collaboration</p>
-            </div>
-            <!-- <div class="col-xs-1"></div> -->
-          </div>
-        </section>
+          </section>
 
         <section class="testimonials">
           <h2><span class="underline">Testimonials</span></h2>
-          <div class="row">
-            <div class="col-xs"></div>
-            <div class="col-xs">
-              <div class="row middle-xs">
-              <div class="kelvin"></div>
-              <div class="col-xs"><p>"Cat's totally awesome and I'm not biased at all!"<br>
-                - Cat's boyfriend</p></div>
+          <div class="oneTestimonial">
+            <div class="kelvin"></div>
+            <div class="blurb">
+              <p>"Cat's totally awesome and I'm not biased at all!"<br>
+              - Cat's boyfriend</p>
             </div>
-          </div>
-            <div class="col-xs"></div>
           </div>
         </section>
       </main>
-    </div>
+    </section>
 
       <footer>
         <p>Thanks for stopping by! Let's chat.</p>
@@ -154,7 +134,7 @@
             </a>
           </li>
           <li>
-            <a href="/contact.html">
+            <a href="mailto:catherinejade.deleon@gmail.com">
               <img src="images/mail.svg" height="20" alt="Envelope/mail icon">
             </a>
           </li>
