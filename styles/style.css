@@ -19,7 +19,7 @@ main {
 /* Sections */
 
 .aboutMePage {
-  background-image: url('/images/aboutmeheader.svg');
+  background-image: url('../images/aboutmeheader.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 75px;
@@ -28,7 +28,7 @@ main {
 
 .hero {
   background: #FFCECE linear-gradient(90deg, #FFCECE 48.45%, rgba(255, 255, 255, 0) 77.96%);
-  background-image: url('/images/catheader.svg');
+  background-image: url('../images/catheader.jpg');
   background-position: right;
   background-repeat: no-repeat;
   height: 381px;
@@ -38,7 +38,7 @@ main {
 }
 
 .heroTitle {
-  margin-left: 20%;
+  margin-left: 10%;
   padding-top: 50px;
   width: 570px;
 }
@@ -174,7 +174,7 @@ main {
   justify-content: center;
   height: 150px;
   background-color: #513D5B;
-  background-image: url("/images/cloutstoragelogo.svg");
+  background-image: url("../images/cloutstoragelogo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 125px;
@@ -190,7 +190,7 @@ main {
   justify-content: center;
   height: 150px;
   background-color: #C8E2FF;
-  background-image: url("/images/busybuslogo.svg");
+  background-image: url("../images/busybuslogo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100px;
@@ -292,11 +292,15 @@ footer {
   width: 50%;
   display: flex;
   flex-direction: row;
+  vertical-align: middle;
+  height: 100px;
 }
 
 .asterisk {
   margin: auto;
   font-size: 100px;
+  background-color: #FFFFFF;
+  padding: 15px 0 0 15px;
 }
 
 .personal {
@@ -306,6 +310,7 @@ footer {
   font-style: italic;
   font-weight: 300;
   text-align: left;
+  padding: 15px 15px 15px 0;
 }
 
 .innerDialog {
@@ -516,28 +521,12 @@ footer li a {
 /* Pictures */
 
 .kelvin {
-  background-image: url("/images/kelvin.jpg");
+  background-image: url("../images/kelvin.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 75px;
   height: 75px;
   width: 75px;
-}
-
-.jordantran {
-  background-image: url("/images/jordantran.png");
-  background-size: contain;
-  border-radius: 80px;
-  height: 80px;
-  width: 80px;
-}
-
-.kevinscout {
-  background-image: url("/images/kevinscout.png");s
-  background-size: contain;
-  border-radius: 80px;
-  height: 80px;
-  width: 80px;
 }
 
 /* Horizontal rule */
@@ -567,9 +556,10 @@ hr {
     }
 
     .heroTitle {
-      margin-left: 10%;
+      margin-left: 5%;
+      margin-bottom: 5%;
       width: 50%;
-      padding-top: 1%;
+      padding: 2%;
     }
 
     .container {
@@ -643,7 +633,7 @@ hr {
     }
 
     .aboutMePage {
-      background-image: url('/images/aboutmeheadermobile.svg');
+      background-image: url('/images/aboutmeheadermobile.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 0 75px;
