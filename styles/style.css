@@ -48,8 +48,8 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #513D5B;
-  padding: 20px auto;
-  width: 100%;
+  padding: 20px 15px;
+  width: auto;
   align-items: center;
 }
 
@@ -251,6 +251,10 @@ main {
   margin: auto;
 }
 
+.kelvin {
+  margin-left: 25px;
+}
+
 .blurb {
   margin: 15px;
   text-align: left;
@@ -265,6 +269,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 10px;
   align-items: center;
+  text-align: center;
 }
 
 .hideOnDesktop {
@@ -518,17 +523,6 @@ footer li a {
   font-size: 16px;
 }
 
-/* Pictures */
-
-.kelvin {
-  background-image: url("../images/kelvin.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 75px;
-  height: 75px;
-  width: 75px;
-}
-
 /* Horizontal rule */
 
 hr {
@@ -538,6 +532,35 @@ hr {
 }
 
 /* Media queries */
+
+/* Small phones */
+
+@media screen and (max-width: 575px) {
+
+  .hero {
+    background-size: 100%;
+  }
+
+  .heroTitle h2 {
+    font-size: 17px;
+    margin: 10px 0 20px auto;
+  }
+
+  .heroTitle {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .cloutStorage, .busyBus {
+    background-position: 5% center;
+    background-size: 30%;
+    flex-basis: 100%;
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+}
 
 /* Smartphones, Tablets  */
 
@@ -633,7 +656,7 @@ hr {
     }
 
     .aboutMePage {
-      background-image: url('/images/aboutmeheadermobile.jpg');
+      background-image: url('../images/aboutmeheadermobile.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 0 75px;
@@ -675,7 +698,7 @@ hr {
     .caseStudyRow {
       flex-direction: column;
       align-items: center;
-      width: 90%;
+      width: 95%;
     }
 
     .caseStudy33 {
@@ -687,8 +710,8 @@ hr {
     }
 
     .caseStudy50, .caseStudyTwoCol {
-      margin: 10px auto;
-      width: 90%;
+      margin: 20px auto;
+      width: 95%;
     }
 
     .userPersona {
