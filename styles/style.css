@@ -13,10 +13,7 @@ body {
 
 main {
   margin: 25px 0;
-}
-
-div {
-  float: left;
+  position: relative;
 }
 
 /* Sections */
@@ -25,7 +22,8 @@ div {
   background-image: url('/images/aboutmeheader.svg');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 100px;
+  background-position: 0 75px;
+  width: 100%;
 }
 
 .hero {
@@ -55,7 +53,7 @@ div {
   align-items: center;
 }
 
-.caseStudyRow {
+.caseStudyRow, .caseStudyRow2, .caseStudyLogoRow {
   display: flex;
   flex-direction: row;
   margin: 20px auto;
@@ -112,18 +110,24 @@ div {
   align-items: center;
 }
 
-.nav {
+.nav, .landingPageNav {
   display: flex;
-  margin: auto;
   justify-content: space-between;
   vertical-align: middle;
   width: 100%;
+  z-index: 1000;
+  position: relative;
+}
+
+.landingPageNav {
+  display: none;
 }
 
 .logoAndName {
   float: left;
   margin-top: auto;
   margin-bottom: auto;
+  padding: 0 2.5%;
 }
 
 .navMenu {
@@ -133,6 +137,7 @@ div {
   justify-content: space-between;
   width: 160px;
   float: right;
+  padding: 0 2.5%;
 }
 
 .landingNavMenu {
@@ -242,6 +247,7 @@ div {
 }
 
 .oneTestimonial {
+  display: flex;
   margin: auto;
 }
 
@@ -261,6 +267,10 @@ footer {
   align-items: center;
 }
 
+.hideOnDesktop {
+  display: none;
+}
+
 /* Bio sections */
 
 .wholeAbout {
@@ -270,11 +280,11 @@ footer {
 }
 
 .bio {
-  width: 50%;
   background-color: #FFFFFF;
+  width: 50%;
   border: 1px solid #9CCDB6;
   box-shadow: 5px 5px 0px #9CCDB6;
-  padding: 50px;
+  padding: 25px;
 }
 
 .shortBio {
@@ -303,8 +313,8 @@ footer {
   font-style: italic;
   border-left: 8px solid #C7D6DB;
   padding: 10px;
-  margin: 24px 25px;
-  width: 100%;
+  margin: 24px auto 24px 25px;
+  width: auto%;
 }
 
 .userPersona {
@@ -318,8 +328,19 @@ footer {
   height: inherit;
 }
 
-.centerText {
-  text-align: center;
+.studyGuide {
+  justify-content: center;
+  width: 60%;
+}
+
+.cloutDescription {
+  width: 30%;
+  margin: auto;
+}
+
+.cloutFinal {
+  width: 67.5%;
+  margin: auto;
 }
 
 /** Typography  **/
@@ -446,6 +467,10 @@ a:hover {
   font-size: 24px;
 }
 
+.centerText {
+  text-align: center;
+}
+
 /** Buttons **/
 .buttons {
   background-color: #FFCECE;
@@ -489,14 +514,6 @@ footer li a {
 }
 
 /* Pictures */
-.profilePic {
-  background-image: url("/images/profilePic.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 5px;
-  height: 150px;
-  width: 150px;
-}
 
 .kelvin {
   background-image: url("/images/kelvin.jpg");
@@ -516,7 +533,7 @@ footer li a {
 }
 
 .kevinscout {
-  background-image: url("/images/kevinscout.png");
+  background-image: url("/images/kevinscout.png");s
   background-size: contain;
   border-radius: 80px;
   height: 80px;
@@ -533,13 +550,57 @@ hr {
 
 /* Media queries */
 
-/* Smartphones  */
+/* Smartphones, Tablets  */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 992px) {
+
+    .landingPageNav, .nav {
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+    }
+
+    .hero {
+      background-size: auto 250px;
+      height: 250px;
+      width: 100%;
+    }
+
+    .heroTitle {
+      margin-left: 10%;
+      width: 50%;
+      padding-top: 1%;
+    }
+
+    .container {
+      margin: auto;
+      width: 95%;
+    }
+
+    .aboutMePage .container {
+      margin: auto;
+      width: 100%;
+    }
+
+    .landingNavMenu {
+      display: none;
+    }
+
+    .heroTitle .titleLogo, .heroTitle .titleCat {
+      display: none;
+    }
+
+    .projects, .profile, .wholeAbout {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
     .cloutStorage, .busyBus {
       background-position: 10% center;
       height: 200px;
+      flex-basis: 100%;
     }
+
     .cloutStorageHover, .busyBusHover {
       color: #F7F8FA;
       opacity: 1;
@@ -547,14 +608,123 @@ hr {
       text-align: left;
       line-height: 19px;
     }
+
     .cloutStorage h2, .cloutStorage .description, .cloutStorageHover h2 {
       color: #F7F8FA;
       margin-left: 40%;
       width: 50%;
     }
+
     .busyBus h2, .busyBus .description, .busyBusHover h2 {
       color: #2E4B5B;
       margin-left: 40%;
       width: 50%;
+    }
+
+    .profile .blurb {
+      text-align: center;
+    }
+
+    .skills, .compARow {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+
+    .skill, .caseStudyFourCol {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 40%;
+    }
+
+    .caseStudyFourCol {
+      margin: 0 auto 15px;
+    }
+
+    .aboutMePage {
+      background-image: url('/images/aboutmeheadermobile.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0 75px;
+      width: 100%;
+    }
+
+    .wholeAbout {
+      background: transparent;
+      width: 100%;
+      margin: 25% auto;
+    }
+
+    .bio {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      /* margin: auto; */
+      margin-top: 75px;
+      padding: 25px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .wholeAbout .innerDialog {
+      width: inherit;
+      margin-right: 0%;
+    }
+
+    .asterisk {
+      display: none;
+    }
+
+    .shortBio {
+      width: auto;
+      margin: 20px;
+    }
+
+    .caseStudyRow {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+
+    .caseStudy33 {
+      width: 75%;
+    }
+
+    .userPRow {
+      flex-direction: column;
+    }
+
+    .caseStudy50, .caseStudyTwoCol {
+      margin: 10px auto;
+      width: 90%;
+    }
+
+    .userPersona {
+      width: 80%;
+      margin: 10px;
+    }
+
+    .mobileSize {
+      width: 50%;
+      padding-bottom: 10px;
+    }
+
+    .hideOnDesktop {
+      display: block;
+    }
+
+    .hideOnMobile {
+      display: none;
+    }
+
+    .cloutFinal {
+      width: auto;
+    }
+
+    .cloutDescription {
+      width: auto;
+      margin: 20px auto;
     }
 }

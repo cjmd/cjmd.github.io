@@ -100,7 +100,7 @@
         <article class="caseStudy50">
           <p>When asked what cloud storage is, all participants understand that it's a drive used to store and access content remotely and online.  When asked to provide examples, the participants listed the biggest names in the market: Google Drive, iCloud, Dropbox, OneDrive, and Box.  Other examples provided were enterprise services like Microsoft Azure, Google Cloud Platform, and Amazon Web Services.  These particular examples gave me insight on the different uses of cloud services.</p>
         </article>
-        <section class="caseStudyRow">
+        <section class="caseStudyRow2">
           <article class="caseStudyTwoCol">
             <img src="images/cloudstoragepiechart.svg" alt="Pie chart that show 33 out of 35 survey participants use cloud storage services" width=100%>
           </article>
@@ -108,7 +108,7 @@
             <img src="images/cloudstorageservices.png" alt="Bar graph of top used cloud storage services" width=100%>
           </article>
         </section>
-        <section class="caseStudyRow">
+        <section class="caseStudyRow2">
           <article class="caseStudyTwoCol">
             <p>Out of the 35 participants, only two (2) don’t use cloud storage.</p>
           </article>
@@ -363,12 +363,12 @@
         <h3>Content Strategy</h3>
 
         <section class="caseStudyRow">
-          <article style="margin: auto 15px"><img src="/images/sitemap.png" width=100% alt="Image of site map"></article>
+          <article style="margin: auto 15px" class="mobileSize"><img src="/images/sitemap.png" width=100% alt="Image of site map"></article>
           <article style="margin: auto 15px">
             <p>At this point, the basis of the product is forming and needs a foundation. To the left is the sitemap and initial content strategy for the product.
             <br><br>
             With this content strategy, wireframes were now able to bbe formed and made into a clickable prototype.</p>
-            <p align=center><button class="buttons" name="wireframePrototypeButton" >Wireframe clickable prototype</button></p>
+            <p align=center><button class="buttons" name="wireframePrototypeButton">Wireframe clickable prototype</button></p>
             <p>The wireframe and prototype were modeled after existing services so that users would have no problem identifying what to do. This is reflective in the user tests that were conducted.
             <br><br>
             These tests provided a lot of feedback for me, like one user's list view suggestion. There were a lot of screens that the "regular users" weren't able to use; that was my lack of direction for them. I should have been more specific with what "organizing content" meant.
@@ -382,10 +382,11 @@
         <h3>Branding</h3>
 
         <section class="caseStudyRow">
+          <article class="caseStudyTwoCol hideOnDesktop"><img src="images/cloudstoragephotouse.png" width=100% alt="Bar graph of reasons survey participants use cloud storage, emphasis on photos"></article>
           <article class="caseStudyTwoCol">
             <p>If this cloud storage service remained a generic service that's supposed to compete with Google Drive, Dropbox, and iCloud, it would get lost in such a saturated market. I revisited the survey results and the user personas to see if there was a product that could go to a less saturated market. After realizing that majority of users use cloud storage for photos, I thought of different ways that a cloud storage service could be used for photos other than just storage.</p>
           </article>
-          <article class="caseStudyTwoCol"><img src="images/cloudstoragephotouse.png" width=100% alt="Bar graph of reasons survey participants use cloud storage, emphasis on photos"></article>
+          <article class="caseStudyTwoCol hideOnMobile"><img src="images/cloudstoragephotouse.png" width=100% alt="Bar graph of reasons survey participants use cloud storage, emphasis on photos"></article>
         </section>
 
         <section class="caseStudyRow">
@@ -406,7 +407,7 @@
     </main>
 
     <section class="cloutLogoSection">
-      <section class="caseStudyRow" style="justify-content:center">
+      <section class="caseStudyLogoRow" style="justify-content:center">
         <article style="width:15%;margin:auto 0">
           <img src="images/cloutlogosketch.png" width=100% alt="Clout Storage logo sketch">
         </article>
@@ -443,9 +444,11 @@
             <p align=center><img src="images/cloutstoragemoodboard.svg" width=100% alt="Collage of social pictures with similar colors to the color palette"></p>
           </article>
         </section>
-        <section class="caseStudyRow" style="justify-content:center;width:60%">
-          <article style="margin:auto"><p>These were the necessary pieces to complete a style guide for the app.</p></article>
-          <article style="margin:auto"><button class="buttons" name="userFlowsButton" align="center" style="margin:0">Style guide</button></article>
+        <section class="caseStudyRow">
+          <article class="caseStudy50">
+            <p>These were the necessary pieces to complete a style guide for the app.</p>
+            <p align="center"><button class="buttons" name="userFlowsButton">Style guide</button></p>
+            <p>With a completed style guide, I had what I needed to create high fidelity mockups.</p>
         </section>
 
         <hr>
@@ -453,7 +456,10 @@
         <h3>Initial mockups</h3>
 
         <section class="caseStudyRow">
-          <article style="width:90%;margin:auto"><img src="images/initialDesktop.png" width=100% alt="Screenshot of the initial version of the app dashboard"></article>
+          <article style="width:90%;margin:auto">
+            <img class="hideOnMobile" src="images/initialDesktop.png" width=100% alt="Screenshot of the initial version of the app dashboard">
+            <img class="hideOnDesktop" src="images/initialDashboard.svg" width=100% alt="Screenshot of the initial version of the app dashboard">
+          </article>
         </section>
         <section class="caseStudyRow">
           <article class="caseStudy50">
@@ -462,7 +468,8 @@
         </section>
         <section class="caseStudyRow">
           <article style="width:90%;margin:auto">
-            <img src="images/desktopIteration.png" width=100% alt="Screenshot of the second version of the app dashboard">
+            <img class="hideOnMobile" src="images/desktopIteration.png" width=100% alt="Screenshot of the second version of the app dashboard">
+            <img class="hideOnDesktop" src="images/dashboarditeration.png" width=100% alt="Screenshot of the second version of the app dashboard">
           </article>
         </section>
         <section class="caseStudyRow">
@@ -483,29 +490,31 @@
         </article>
       </section>
       <section class="caseStudyRow">
-        <article style="width:67.5%;margin:auto">
-          <img src="images/finalDashboard.png" width=100% alt="Screenshot of the final version of the app dashboard">
+        <article class="cloutFinal">
+          <img class="hideOnMobile" src="images/finalDashboard.png" width=100% alt="Screenshot of the final version of the app dashboard">
+          <img class="hideOnDesktop" src="images/finalmobile.jpg" width=100% alt="Screenshot of the final version of the app dashboard">
         </article>
       </section>
       <section class="caseStudyRow">
-        <article style="width:67.5%;margin:auto">
-          <img src="images/finalSearch.png" width=100% alt="Screenshot of the final version of the app search function">
+        <article class="cloutFinal">
+          <img class="hideOnMobile" src="images/finalDashboard.png" width=100% alt="Screenshot of the final version of the app dashboard">
+          <img class="hideOnDesktop" src="images/mobilepeek.jpg" width=100% alt="Screenshot of the final version of the app dashboard">
         </article>
       </section>
       <section class="caseStudyRow">
-        <article style="width:30%;margin:auto">
+        <article class="cloutDescription">
           <p style="font-family:'Lato'"><img src="images/tag.svg" alt="Tag icon"><br>
           <b>AUTOMATIC TAGS</b><br>
           <br>
           Using machine learning and AI, your photos are automatically tagged for easy search and organization.</p>
         </article>
-        <article style="width:30%;margin:auto">
+        <article class="cloutDescription">
           <p style="font-family:'Lato'"><img src="images/search.svg" alt="Search icon"><br>
           <b>SEARCH FOR ANYTHING</b><br>
           <br>
           Find pictures by date, place, content, and context. Use the built in tags or create your own for truly personal search.</p>
         </article>
-        <article style="width:30%;margin:auto">
+        <article class="cloutDescription">
           <p style="font-family:'Lato'"><img src="images/devices.svg" alt="Devices icon"><br>
           <b>SYNC ACROSS ALL DEVICES</b><br>
           <br>
