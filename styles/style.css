@@ -446,6 +446,10 @@ a {
   background-color: #C7D6DB;
 }
 
+.buttonLink {
+  background: none;
+}
+
 a:hover {
   color: inherit;
   background: none;
