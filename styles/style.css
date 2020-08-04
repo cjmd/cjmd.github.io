@@ -19,11 +19,15 @@ main {
 /* Sections */
 
 .aboutMePage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-image: url('../images/aboutmeheader.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 75px;
+  background-position: 0 86px;
   width: 100%;
+  justify-content: flex-start;
 }
 
 .hero {
@@ -145,10 +149,6 @@ main {
   margin-left: 80%;
   width: 160px;
   justify-content: space-between;
-}
-
-.nav .buttons {
-  margin: 25px 0;
 }
 
 .myWork {
@@ -311,7 +311,7 @@ footer {
 
 .personal {
   margin: auto;
-  background-color: white;
+  background-color: #FFFFFF;
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
   font-weight: 300;
@@ -494,17 +494,20 @@ a:hover {
   padding: 9px 13px 9px;
   margin: 25px 0px;
   outline: none;
+  cursor: pointer;
 }
 
 .buttons:hover {
   background-color: #FFBBBB;
   outline: none;
+  cursor: pointer;
 }
 
 .buttons:active {
   box-shadow: .5px 1px rgba(46, 75, 91, 0.25);
   transform: translateY(.5px);
   outline: none;
+  cursor: pointer;
 }
 
 .cloutSectioned .buttons {
