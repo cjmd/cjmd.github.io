@@ -501,7 +501,7 @@ a:hover {
   cursor: pointer;
 }
 
-a.buttons {
+a.buttons, .titleAndLogo a.buttons, .navMenu a.buttons, footer a.buttons, .landingNavMenu a.buttons {
   background-color: #FFCECE;
   border: none;
   border-radius: 15px;
@@ -516,8 +516,11 @@ a.buttons {
   text-decoration: none;
 }
 
-a.buttons:hover {
+a.buttons:hover, .titleAndLogo a.buttons:hover, .navMenu a.buttons:hover, footer a.buttons:hover, .landingNavMenu a.buttons:hover {
   text-decoration: none;
+  background-color: #FFBBBB;
+  outline: none;
+  cursor: pointer;
 }
 
 .buttons:hover {
