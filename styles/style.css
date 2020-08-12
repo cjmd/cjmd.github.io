@@ -370,6 +370,8 @@ p, h3, h4, h5, h6, a, ul, li, .bio p {
 .cloutSectioned li {
   color: #F7F8FA;
   list-style: circle;
+  width:67%;
+  margin: auto;
 }
 
 .userPersona li {
