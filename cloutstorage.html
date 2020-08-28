@@ -3,26 +3,27 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Cat de Leon</title>
+    <link rel="icon" href="../images/cd-logo.svg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:ital,wght@0,700;1,300;1,400&family=Sacramento&family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:wght@400;600&family=Sacramento&family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body style="background-color:#F7F8FA">
 
-      <div class="nav">
+      <div class="nav" style="background-color:#FFFFFF">
         <div class="logoAndName">
           <span class="titleAndLogo"><a href="index.html"><img src="../images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
         </div>
         <div class="navMenu">
           <a href="bio.html">About me</a>
-          <!-- <a href="mailto:hi@catdeleon.design" target="_blank"><button class="buttons">Contact</button></a> -->
-          <a href="mailto:hi@catdeleon.design" target="_blank" class="buttons">Contact</a>
+          <a href="../files/catdeleonresume.pdf" target="_blank">Resume</a>
+          <a href="contact.html" class="buttons">Contact</a>
         </div>
       </div>
-
+<section class="theBody">
     <section class="cloutSectioned">
       <h2>Clout Storage</h2>
-      <img src="../images/cloutstoragelogo.svg" height=120 alt="Clout Storage logo">
+      <img src="../images/finalmockups.png" alt="Clout Storage mockups" class="finalMockUps">
       <p>A cloud storage service that organizes your photos using machine learning and AI.</p>
       <br>
       <a href="http://cloutstorage.catdeleon.design/" target="_blank" class="buttons">View Clout Storage Prototype</a>
@@ -55,7 +56,7 @@
         <h3>Solution</h3>
         <div class="caseStudyRow">
           <div class="caseStudy50">
-            <p>With the research and process outlined below, the product developed is called Clout Storage, a cloud storage photo app geared toward phooto and social media use.</p>
+            <p>With the research and process outlined below, the product developed is called Clout Storage, a cloud storage photo app geared toward photo and social media use.</p>
           </div>
           <div class="caseStudy33">
             <img src="../images/cloutstoragelogo-title.svg" alt="Clout Storage logo with title" style="width:100%">
@@ -101,20 +102,22 @@
         <div class="caseStudy50">
           <p>When asked what cloud storage is, all participants understand that it's a drive used to store and access content remotely and online.  When asked to provide examples, the participants listed the biggest names in the market: Google Drive, iCloud, Dropbox, OneDrive, and Box.  Other examples provided were enterprise services like Microsoft Azure, Google Cloud Platform, and Amazon Web Services.  These particular examples gave me insight on the different uses of cloud services.</p>
         </div>
-        <div class="caseStudyRow2">
-          <div class="caseStudyTwoCol">
-            <img src="../images/cloudstoragepiechart.svg" alt="Pie chart that show 33 out of 35 survey participants use cloud storage services" style="width:100%">
+        <div class="caseStudyStack">
+          <div class="caseStudyRow2">
+            <div class="caseStudyTwoCol">
+              <img src="../images/cloudstoragepiechart.svg" alt="Pie chart that show 33 out of 35 survey participants use cloud storage services" style="width:100%">
+            </div>
+            <div class="caseStudyTwoCol">
+              <p>Out of the 35 participants, only two (2) don’t use cloud storage.</p>
+            </div>
           </div>
-          <div class="caseStudyTwoCol">
-            <img src="../images/cloudstorageservices.png" alt="Bar graph of top used cloud storage services" style="width:100%">
-          </div>
-        </div>
-        <div class="caseStudyRow2">
-          <div class="caseStudyTwoCol">
-            <p>Out of the 35 participants, only two (2) don’t use cloud storage.</p>
-          </div>
-          <div class="caseStudyTwoCol">
-            <p>Out of all of the participants who do use cloud storage, all but one (1) use Google Drive.  Majority use iCloud and Dropbox as well.</p>
+          <div class="caseStudyRow2">
+            <div class="caseStudyTwoCol">
+              <img src="../images/cloudstorageservices.png" alt="Bar graph of top used cloud storage services" style="width:100%">
+            </div>
+            <div class="caseStudyTwoCol">
+              <p>Out of all of the participants who do use cloud storage, all but one (1) use Google Drive.  Majority use iCloud and Dropbox as well.</p>
+            </div>
           </div>
         </div>
 
@@ -551,8 +554,11 @@
             While I feel like I've improved so much doing this project alone, the biggest takeaway is how much feedback matters. Constantly getting comments from graders, my mentor, and my peers really helped put this project together. Moving forward, I will be sure to gather as much external feedback as I possibly can.</p>
           </article>
         </div>
+        <div class="nextStudy">
+          <p class="centerText">Next:<br>
+            <a href="http://busybus.catdeleon.design/" target="_blank">View the BusyBus clickable prototype</a></p>
+        </div>
       </div>
-    <!-- </main> -->
 
     <footer>
       <p>If you have any questions, please don't hesitate to contact me!</p>
@@ -568,13 +574,13 @@
           </a>
         </li>
         <li>
-          <a href="mailto:hi@catdeleon.design" target="_blank">
+          <a href="contact.html">
             <img src="../images/mail.svg" height="20" alt="Envelope/mail icon">
           </a>
         </li>
       </ul>
     </footer>
-
+</section>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174467794-1"></script>

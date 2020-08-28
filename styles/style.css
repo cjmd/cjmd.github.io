@@ -30,6 +30,14 @@ main {
   justify-content: flex-start;
 }
 
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+}
+
 .hero {
   background: #FFCECE linear-gradient(90deg, #FFCECE 48.45%, rgba(255, 255, 255, 0) 77.96%);
   background-image: url('../images/catheader.jpg');
@@ -57,9 +65,23 @@ main {
   align-items: center;
 }
 
-.caseStudyRow, .caseStudyRow2, .caseStudyLogoRow {
+.caseStudyRow, .caseStudyLogoRow {
   display: flex;
   flex-direction: row;
+  margin: 20px auto;
+  width: 83%;
+}
+
+.caseStudyStack {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 83%;
+}
+
+.caseStudyRow2 {
+  display: flex;
+  flex-direction: column;
   margin: 20px auto;
   width: 83%;
 }
@@ -82,7 +104,7 @@ main {
 
 .caseStudyTwoCol {
   margin: auto;
-  width: 45%;
+  width: 100%;
 }
 
 .compARow {
@@ -115,12 +137,18 @@ main {
 }
 
 .nav, .landingPageNav {
+  background-color: inherit;
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
   width: 100%;
   z-index: 1000;
-  position: relative;
+  position: fixed;
+  box-shadow: 1px 1px rgba(46, 75, 91, 0.25);
+}
+
+.theBody {
+  padding-top: 92px;
 }
 
 .landingPageNav {
@@ -139,7 +167,7 @@ main {
   margin-top: auto;
   margin-bottom: auto;
   justify-content: space-between;
-  width: 160px;
+  width: 215px;
   float: right;
   padding: 0 2.5%;
 }
@@ -355,16 +383,24 @@ footer {
 }
 
 /** Typography  **/
-p, h3, h4, h5, h6, a, ul, li, .bio p {
+p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
   color: #2E4B5B;
   font-family: 'Pontano Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
-.cloutSectioned p, .cloutSectioned h2, .cloutSectioned h3, .cloutSectioned h4, .cloutSectioned h5, .cloutSectioned h6 {
+::placeholder {
+  color: #999999;
+}
+
+.cloutSectioned p, .cloutSectioned h2, .cloutSectioned h3, .cloutSectioned h4, .cloutSectioned h5{
   color: #F7F8FA;
   text-align: center;
+}
+
+.cloutSectioned h6 {
+  color: #F7F8FA;
 }
 
 .cloutSectioned li {
@@ -379,16 +415,19 @@ p, h3, h4, h5, h6, a, ul, li, .bio p {
 }
 
 .cloutSectioned h3 {
+  font-family: 'Titillium Web', sans-serif;
+  color: #F7F8FA;
+  text-align: center;
+  text-decoration: underline #FFCECE;
+  font-size: 20px;
+}
+
+.cloutSectioned h4 {
+  font-family: 'Titillium Web', sans-serif;
   color: #F7F8FA;
   text-align: center;
   text-decoration: underline #FFCECE;
   font-size: 18px;
-}
-
-.cloutSectioned h4 {
-  color: #F7F8FA;
-  text-align: center;
-  text-decoration: underline #FFCECE;
 }
 
 .titleCat {
@@ -421,15 +460,24 @@ h2 {
   margin: 25px auto;
 }
 
+.cloutStoragePage h2, .cloutSectioned h2 {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
 .cloutStoragePage h3 {
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   text-decoration: underline #FFCECE;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .cloutStoragePage h4 {
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   text-decoration: underline #FFCECE;
+  font-size: 18px;
 }
 
 .skills h3 {
@@ -466,8 +514,12 @@ a:hover {
   text-decoration: none;
 }
 
-.navMenu a:hover {
+.navMenu a:hover, .landingNavMenu a:hover {
   color: #2E4B5B;
+  text-decoration: underline #C7D6DB;
+}
+
+a.activePage {
   text-decoration: underline #C7D6DB;
 }
 
@@ -479,7 +531,7 @@ a:hover {
   width: 100%;
 }
 
-.bio h4 {
+.bio h4, .contactPage h1 {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 24px;
 }
@@ -575,36 +627,46 @@ hr {
   width: 100%;
 }
 
-/* Media queries */
-
-/* Small phones */
-
-@media screen and (max-width: 575px) {
-
-  .hero {
-    background-size: 100%;
-  }
-
-  .heroTitle h2 {
-    font-size: 17px;
-    margin: 10px 0 20px auto;
-  }
-
-  .heroTitle {
-    padding-top: 0;
-    margin: 0;
-  }
-
-  .cloutStorage, .busyBus {
-    background-position: 5% center;
-    background-size: 30%;
-    flex-basis: 100%;
-    /* width: auto; */
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
+.finalMockUps {
+  width: 75%;
+  max-width: 1000px;
 }
+
+/* Form */
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 358px;
+  min-width: 283px;
+  text-align: left;
+  color: #2E4B5B;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+}
+
+input[type=text], textarea {
+  margin: 10px auto 25px auto;
+  display: block;
+  width: 50%;
+  max-width: 358px;
+  min-width: 283px;
+  padding: 15px;
+  border: 1px solid #2E4B5B;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #2E4B5B;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Media queries */
 
 /* Smartphones, Tablets  */
 
@@ -685,14 +747,15 @@ hr {
     .skills, .compARow {
       display: flex;
       flex-wrap: wrap;
-      width: 80%;
+      width: 60%;
+      margin: auto;
     }
 
     .skill, .caseStudyFourCol {
       margin: 10px;
       display: flex;
       flex-direction: column;
-      flex-basis: 40%;
+      flex-basis: 95%;
     }
 
     .caseStudyFourCol {
@@ -718,7 +781,6 @@ hr {
       display: flex;
       flex-direction: column;
       width: auto;
-      /* margin: auto; */
       margin-top: 75px;
       padding: 25px;
       border: none;
@@ -739,7 +801,12 @@ hr {
       margin: 20px;
     }
 
-    .caseStudyRow {
+    .caseStudyStack {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .caseStudyRow, .caseStudyRow2 {
       flex-direction: column;
       align-items: center;
       width: 95%;
@@ -784,4 +851,46 @@ hr {
       width: auto;
       margin: 20px auto;
     }
+
+    .myWork {
+      background-color: inherit;
+    }
+}
+
+/* Small phones */
+
+@media screen and (max-width: 575px) {
+
+  .hero {
+    padding-top: 30px;
+    background-image: url('../images/catheadermobile.jpg');
+    background-position: 75%;
+    background-size: auto 100%;
+  }
+
+  .heroTitle h2 {
+    font-size: 17px;
+    margin: 10px 0 20px auto;
+  }
+
+  .heroTitle {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60%;
+  }
+
+  .cloutStorage, .busyBus {
+    margin: 0;
+    background-position: 10% center;
+    background-size: 30%;
+    flex-basis: 100%;
+    width: 95%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .logoCat {
+    display: none;
+  }
+
 }

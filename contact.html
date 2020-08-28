@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Cat de Leon</title>
+    <link rel="icon" href="../images/cd-logo.svg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Pontano+Sans&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body>
+  <body class="contactPage" style="background-color:#F7F8FA">
 
-    <header>
-      <nav>
-        <a href="index.html"><img src="logo.png" alt="Cat de Leon logo">cat de leon</a>
-        <div class="navMenu">
-          <a href="#">Work</a>
-          <a href="bio.html">About me</a>
-          <a href="#">Resume</a>
-          <button type="button" name="contact" onclick="location.href='mailto:catherinejade.deleon@gmail.com'">Contact</button>
-        </div>
-      </nav>
-    </header>
+    <div class="nav" style="background-color:#FFFFFF">
+      <div class="logoAndName">
+        <span class="titleAndLogo"><a href="index.html"><img src="../images/cd-logo.svg" height="25" alt="Cat de Leon logo" class="smallLogo"><span class="logoCat">cat de leon</span></a></span>
+      </div>
+      <div class="navMenu">
+        <a href="bio.html">About me</a>
+        <a href="../files/catdeleonresume.pdf" target="_blank">Resume</a>
+        <a href="contact.html" class="buttons">Contact</a>
+      </div>
+    </div>
 
-    <main>
-      <h1>Want to chat? Say hi!</h1>
+    <div class="container" style="display:flex;flex-direction: column; flex-grow: 1;padding-top:92px">
+      <div>
+        <h1 style="text-align:center; margin:25px auto">Want to chat? Say hi!</h1>
 
-      <form class="contact" action="contact.html">
-        <label for="submitName">Name</label>
-        <input type="text" name="submitName" placeholder="Mrs. Snugglesworth">
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="mrs.snugglesworth@thesnuggles.io">
-        <label for="message">Message</label>
-        <textarea name="message" rows="8" cols="10" placeholder="Hello jello..."></textarea>
-        <input type="submit" value="Full send">
-      </form>
-    </main>
+        <form class="contact" action="https://formspree.io/xlepyjrz" method="POST">
+          <label for="submitName">Name</label>
+          <input type="text" name="submitName" placeholder="Judy Travis" required>
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="judytravis@email.com" required>
+          <label for="message">Message</label>
+          <textarea name="message" rows="8" cols="10" placeholder="Hey Cat, let's work together!" required></textarea>
+          <button type="submit" class="buttons" style="margin:auto">Send</button>
+        </form>
+      </div>
+    </div>
 
     <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/catdeleon/" target="_blank">
+            <img src="../images/linkedin.svg" height="20" alt="LinkedIn icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/cjmd" target="_blank">
+            <img src="../images/github.svg" height="20" alt="GitHub icon">
+          </a>
+        </li>
+      </ul>
     </footer>
 
   </body>
