@@ -194,6 +194,22 @@ main {
   justify-content: center;
 }
 
+.sweetSpot {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #09603A;
+  background-image: url("../images/sweetspotlogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  border-radius: 10px;
+  width: 360px;
+}
+
 .cloutStorage {
   margin: 15px;
   display: flex;
@@ -227,7 +243,7 @@ main {
   width: 360px;
 }
 
-.cloutStorageHover, .busyBusHover {
+.cloutStorageHover, .busyBusHover, .sweetSpotHover {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -239,7 +255,7 @@ main {
   transition: 0.1s opacity ease-in-out;
 }
 
-.cloutStorageHover:hover, .busyBusHover:hover {
+.cloutStorageHover:hover, .busyBusHover:hover, .sweetSpotHover:hover {
   opacity: 1;
 }
 
@@ -484,7 +500,7 @@ h2 {
   margin: 0;
 }
 
-.cloutStorageHover h2, .busyBusHover h2 {
+.cloutStorageHover h2, .busyBusHover h2, .sweetSpot h2 {
   margin: 0px;
 }
 
@@ -714,13 +730,13 @@ input[type=text], textarea {
       flex-flow: column wrap;
     }
 
-    .cloutStorage, .busyBus {
+    .cloutStorage, .busyBus, .sweetSpot {
       background-position: 10% center;
       height: 200px;
       flex-basis: 100%;
     }
 
-    .cloutStorageHover, .busyBusHover {
+    .cloutStorageHover, .busyBusHover, .sweetSpotHover {
       color: #F7F8FA;
       opacity: 1;
       background-color: transparent;
@@ -728,7 +744,7 @@ input[type=text], textarea {
       line-height: 19px;
     }
 
-    .cloutStorage h2, .cloutStorage .description, .cloutStorageHover h2 {
+    .cloutStorage h2, .cloutStorage .description, .cloutStorageHover h2, .sweetSpot h2, .sweetSpot .description, .sweetSpotHover h2 {
       color: #F7F8FA;
       margin-left: 40%;
       width: 50%;
