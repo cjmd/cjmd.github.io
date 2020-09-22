@@ -731,6 +731,7 @@ input[type=text], textarea {
     }
 
     .cloutStorage, .busyBus, .sweetSpot {
+      margin: 5px 0 5px 0;
       background-position: 10% center;
       height: 200px;
       flex-basis: 100%;
@@ -896,7 +897,7 @@ input[type=text], textarea {
   }
 
   .cloutStorage, .busyBus, .sweetSpot {
-    margin: 0;
+    margin: 5px 0 5px 0;
     background-position: 10% center;
     background-size: 30%;
     flex-basis: 100%;
