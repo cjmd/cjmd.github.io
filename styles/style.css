@@ -895,7 +895,7 @@ input[type=text], textarea {
     width: 60%;
   }
 
-  .cloutStorage, .busyBus {
+  .cloutStorage, .busyBus, .sweetSpot {
     margin: 0;
     background-position: 10% center;
     background-size: 30%;
