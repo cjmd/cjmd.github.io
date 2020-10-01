@@ -1,0 +1,91 @@
+p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
+  color: #333333;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sweetSpotSectioned h4 {
+  font-family: 'Titillium Web', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: underline #FFCECE;
+  font-size: 18px;
+}
+
+.sweetSpotSectioned li {
+  color: #FFFFFF;
+  list-style: circle;
+  width:67%;
+  margin: auto;
+}
+
+.sweetSpotSectioned {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  background-color: #09603A;
+  padding: 20px 15px;
+  width: auto;
+  align-items: center;
+}
+
+.sweetSpotSectioned p, .sweetSpotSectioned h2, .sweetSpotSectioned h3, .sweetSpotSectioned h5 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+a.sweetSpotButtons {
+  background-color: #004680;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 2px rgba(46, 75, 91, 0.25);
+  color: #FFFFFF;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 14px;
+  padding: 9px 13px 9px;
+  margin: 25px 0px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.sweetSpotButtons:hover {
+  color: #004680;
+  text-decoration: none;
+  background-color: #F7F8FA;
+  outline: none;
+  cursor: pointer;
+}
+
+.sweetSpotButtons:active {
+  box-shadow: .5px 1px rgba(46, 75, 91, 0.25);
+  transform: translateY(.5px);
+  outline: none;
+  cursor: pointer;
+}
+
+.caseStudy {
+  color: #333333;
+}
+
+.caseStudy h2, .caseStudy h3 {
+  color: #333333;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.sweetSpotSectioned h3 {
+  color: #FFFFFF;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.caseStudy h4 {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  text-decoration: underline #333333;
+  font-size: 18px;
+}
