@@ -376,7 +376,8 @@ footer {
   display: flex;
   flex-flow: column wrap;
   background-color: #FFFFFF;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   padding: 30px 20px 30px 45px;
   margin: 0 10px;
   width: 33%;
@@ -426,7 +427,7 @@ p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
   margin: auto;
 }
 
-.userPersona li {
+.userPersona li, .container li {
   list-style: circle;
 }
 
@@ -871,6 +872,10 @@ input[type=text], textarea {
 
     .myWork {
       background-color: inherit;
+    }
+
+    .changeForMobile {
+      width:100%;
     }
 }
 
