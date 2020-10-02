@@ -35,6 +35,10 @@ p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
   text-align: center;
 }
 
+ .sweetSpotSectioned h6 {
+   color: #FFFFFF;
+ }
+
 a.sweetSpotButtons {
   background-color: #004680;
   border: none;

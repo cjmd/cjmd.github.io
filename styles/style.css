@@ -427,7 +427,7 @@ p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
   margin: auto;
 }
 
-.userPersona li {
+.userPersona li, .container li {
   list-style: circle;
 }
 
@@ -872,6 +872,10 @@ input[type=text], textarea {
 
     .myWork {
       background-color: inherit;
+    }
+
+    .changeForMobile {
+      width:100%;
     }
 }
 
