@@ -557,6 +557,10 @@ a.activePage {
   text-align: center;
 }
 
+.designedBy {
+  font-size: 14px;
+}
+
 /** Buttons **/
 .buttons {
   background-color: #FFCECE;
