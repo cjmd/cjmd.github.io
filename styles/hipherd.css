@@ -1,0 +1,57 @@
+p, h3, h4, h5, h6, a, ul, li, .bio p, label, ::placeholder {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hipherdSectioned {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF6CF;
+  padding: 20px 15px;
+  width: auto;
+  align-items: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+a.buttons {
+  background-color: #FFD300;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 2px rgba(46, 75, 91, 0.25);
+  color: #09603A;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 14px;
+  padding: 9px 13px 9px;
+  margin: 25px 0px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.buttons:hover {
+  color: #004680;
+  text-decoration: none;
+  background-color: #f0c600;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons:active {
+  box-shadow: .5px 1px rgba(46, 75, 91, 0.25);
+  transform: translateY(.5px);
+  outline: none;
+  cursor: pointer;
+}
+
+.caseStudy h2, .caseStudy h3 {
+  color: #333333;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
